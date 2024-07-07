@@ -1,0 +1,65 @@
+/* Base styles */
+.centered-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+input, button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .centered-content h1 {
+        font-size: 16px; /* Smaller text on small devices */
+    }
+
+    input, button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+#specialImage {
+    max-width: 100%; /* ensures the image is not wider than its container */
+    height: auto; /* maintains the aspect ratio */
+    display: block; /* block-level to allow margin auto to work */
+    margin: 20px auto; /* centers the image horizontally */
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-content h1 {
+    font-size: 4em;
+    color: #ff6347; /* Tomato color */
+    text-shadow: 0 0 20px #ff6347; /* Soft glow effect */
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
