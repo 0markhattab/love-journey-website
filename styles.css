@@ -32,6 +32,14 @@ input, button {
     margin: 20px auto; /* centers the image horizontally */
 }
 
+.image-container {
+    width: 100%; /* Takes the full width of its parent */
+    max-height: 50vh; /* Maximum height of 50% of the viewport height */
+    display: flex; /* Uses Flexbox for centering */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
 body, html {
     height: 100%;
     margin: 0;
